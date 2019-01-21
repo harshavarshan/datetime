@@ -1,0 +1,7 @@
+<script>
+	function timezone_offset_in_seconds(dt) {
+var dat = dt.getTimezoneOffset() * 60;
+return (dat < 0 ) ? - dat: dat;
+}
+console.log(timezone_offset_in_seconds(new Date()));
+</script>

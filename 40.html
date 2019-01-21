@@ -1,0 +1,8 @@
+<script>
+	function diff_to_GMT (dt) {
+var diff = (dt.getUTCHours()-dt.getHours())*100;
+return (diff < 10 ) ? "0" + (-diff):"0"+diff;
+}
+var dt = new Date();
+console.log(diff_to_GMT(dt));
+</script>

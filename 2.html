@@ -1,0 +1,11 @@
+<script>
+	function ex2(s){
+var d = new Date();
+var month = d.getMonth() + 1 + s;
+var day = d.getDate() + s;
+var year = d.getFullYear() ;
+return [month, day, year].join('');
+}
+console.log(ex2('/'));
+console.log(ex2('-'));
+</script>

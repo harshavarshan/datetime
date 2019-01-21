@@ -1,0 +1,8 @@
+<script>
+	function numeric_month (d) {
+res = d.getMonth()+1;
+if(res < 10) return "0" + res
+else return res;
+}
+console.log(numeric_month(new Date(2015, 10, 1)));
+</script>

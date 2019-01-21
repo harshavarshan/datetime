@@ -1,0 +1,8 @@
+<script>
+	function minutes_with_leading_zeros (d) {
+var m = d.getSeconds();
+m = (m < 10) ? '0' + m : m;
+return m;
+}
+console.log(minutes_with_leading_zeros(new Date(1989, 10, 1)));
+</script>

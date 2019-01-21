@@ -1,0 +1,9 @@
+<script>
+	function timeConvert (data) {
+var min = data % 60;
+var h = (data - min)/ 60;
+return data + ' minutes = ' + h + ' hours and ' + min + " minutes";
+};
+
+console.log(timeConvert(200));
+</script>

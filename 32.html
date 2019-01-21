@@ -1,0 +1,11 @@
+<script>
+	Date.prototype.getInternetTime = function(){
+
+var date = this, h = date.getUTCHours()+1, m = date.getUTCMinutes(), s = date.getUTCSeconds(), itime = Math.round( (s + m*60 + h*3600)/86.4 );
+
+return itime;
+};
+
+var date = new Date();
+console.log( date.getInternetTime() );
+</script>

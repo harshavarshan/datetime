@@ -1,0 +1,17 @@
+<script>
+	function short_Days (d) {
+var weekday = new Array(7);
+weekday[0] = "Sun";
+weekday[1] = "Mon";
+weekday[2] = "Tue";
+weekday[3] = "Wed";
+weekday[4] = "Thu";
+weekday[5] = "Fri";
+weekday[6] = "Sat";
+var res = weekday[d.getDay()];
+
+return res;
+
+}
+console.log(short_Days(new Date(2015, 10, 1)));
+</script>

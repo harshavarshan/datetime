@@ -1,0 +1,9 @@
+<script>
+	dt = new Date(2015, 10, 1);
+function full_month(dt){
+var start = new Date(dt.getFullYear(),0,1);
+var weeks = Math.ceil((dt.getTime()-start.getTime())/(1000*3600*24*7));
+console.log(weeks);
+}
+full_month(dt);
+</script>

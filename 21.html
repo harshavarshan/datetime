@@ -1,0 +1,17 @@
+<script>
+	function long_Days (d) {
+var weekday = new Array();
+weekday[0] = "Sunday";
+weekday[1] = "Monday";
+weekday[2] = "Tuesday";
+weekday[3] = "Wednesday";
+weekday[4] = "Thursday";
+weekday[5] = "Friday";
+weekday[6] = "Saturday";
+var res = weekday[d.getDay()];
+
+return res;
+
+}
+console.log(long_Days(new Date(2015, 10, 1)));
+</script>

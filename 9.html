@@ -1,0 +1,11 @@
+<script>
+	function lastday (year, month) {
+var res = new Date(year, month+1, 0);
+res = res.getDate();
+return res;
+
+}
+console.log(lastday(2014,0));
+console.log(lastday(2014,1));
+console.log(lastday(2014,11));
+</script>

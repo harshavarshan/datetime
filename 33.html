@@ -1,0 +1,9 @@
+<script>
+	function hours_with_zeroes (d) {
+var h = d.getHours();
+if(h < 10) return '0' + h;
+else return h;
+}
+console.log(hours_with_zeroes(new Date(1989, 10, 1)));
+console.log(hours_with_zeroes(new Date()));
+</script>

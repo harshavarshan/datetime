@@ -1,0 +1,11 @@
+<script>
+	function day_of_the_month (d) {
+var res = d.getDate();
+if(res < 10){
+res = "0" + res;
+}
+return res;
+};
+
+console.log(day_of_the_month(new Date(2015, 10, 11)));
+</script>

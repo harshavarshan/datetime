@@ -1,0 +1,9 @@
+<script>
+	function sort_year (d) {
+var h = d.getHours();
+if(h < 13) return h + 'AM';
+else return h + 'PM';
+}
+console.log(sort_year(new Date()));
+console.log(sort_year(new Date(2018, 10, 1)));
+</script>

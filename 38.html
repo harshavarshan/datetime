@@ -1,0 +1,10 @@
+<script>
+	Date.prototype.getTimezone = function(){
+
+var date = this, re = new RegExp('\\((.*)\\)'), tz = (date.toString()).match(re);
+return tz[1];
+};
+
+var date = new Date();
+console.log( date.getTimezone() );
+</script>

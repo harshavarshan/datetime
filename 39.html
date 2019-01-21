@@ -1,0 +1,8 @@
+<script>
+	function daylights_savings(dt) {
+var dat = dt.getTimezoneOffset();
+return (dat < 0)? -(dat/60): dat/60 ;
+}
+
+console.log(daylights_savings(new Date()));
+</script>

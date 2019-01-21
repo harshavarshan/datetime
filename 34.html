@@ -1,0 +1,9 @@
+<script>
+	function hours_without_zeroes (d) {
+var h = d.getHours();
+h.toLocaleString('sv-SV');
+return h;
+}
+console.log(hours_without_zeroes(new Date(1989, 10, 1)));
+console.log(hours_without_zeroes(new Date()));
+</script>

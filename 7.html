@@ -1,0 +1,13 @@
+<script>
+	function is_weekend (nr) {
+var res = nr.getDay();
+if(res === 0 || res === 6){
+return 'weekend'
+}
+else return 'not weekend';
+}
+console.log(is_weekend(new Date('Nov 15, 2014')));
+console.log(is_weekend(new Date('Nov 16, 2014')));
+console.log(is_weekend(new Date('Nov 17, 2014')));
+console.log(add_minutes(new Date(2014,10,2), 30).toString());
+</script>

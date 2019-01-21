@@ -1,0 +1,8 @@
+<script>
+	function ex50 (d) {
+var day = d.getDay();
+var diff = d.getDate() - day + 7;
+return new Date(d.setDate(diff));
+}
+console.log(ex50(new Date()));
+</script>
